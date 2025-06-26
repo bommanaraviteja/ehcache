@@ -1,0 +1,16 @@
+com/rt/blackduck/service/BlackDuckService.class
+com/rt/blackduck/mojo/BlackDuckConfigMojo.class
+com/rt/blackduck/config/BlackDuckConfiguration.class
+com/rt/blackduck/config/ScheduleConfiguration.class
+com/rt/blackduck/util/PomManipulator.class
+com/rt/blackduck/config/GitConfiguration.class
+com/rt/blackduck/mojo/BlackDuckScheduleMojo.class
+com/rt/blackduck/service/SchedulerService$BlackDuckScanJob.class
+com/rt/blackduck/config/PluginConfiguration.class
+com/rt/blackduck/service/SchedulerService.class
+com/rt/blackduck/service/GitService.class
+com/rt/blackduck/service/SchedulerService$BlackDuckScanWorkflow.class
+com/rt/blackduck/service/BlackDuckService$Vulnerability.class
+com/rt/blackduck/config/PluginConfiguration$AutoFixConfiguration.class
+com/rt/blackduck/mojo/BlackDuckScanMojo.class
+com/rt/blackduck/service/BlackDuckService$1.class

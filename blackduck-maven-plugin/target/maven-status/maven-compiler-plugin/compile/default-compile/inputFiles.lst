@@ -1,0 +1,11 @@
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/config/GitConfiguration.java
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/mojo/BlackDuckConfigMojo.java
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/config/BlackDuckConfiguration.java
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/config/PluginConfiguration.java
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/service/SchedulerService.java
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/service/BlackDuckService.java
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/mojo/BlackDuckScanMojo.java
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/util/PomManipulator.java
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/config/ScheduleConfiguration.java
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/mojo/BlackDuckScheduleMojo.java
+/workspace/ehcache/blackduck-maven-plugin/src/main/java/com/rt/blackduck/service/GitService.java

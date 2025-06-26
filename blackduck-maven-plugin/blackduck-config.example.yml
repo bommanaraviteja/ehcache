@@ -1,0 +1,132 @@
+# Black Duck Maven Plugin Configuration Example
+# Copy this file to blackduck-config.yml and customize for your environment
+
+blackduck:
+  # Required: Your Black Duck Hub URL
+  url: "https://your-blackduck-instance.com"
+  
+  # Required: Black Duck API token
+  token: "your-blackduck-api-token"
+  
+  # Project name (defaults to Maven project name if not specified)
+  project-name: "my-project"
+  
+  # Project version (defaults to Maven project version if not specified)
+  project-version: "1.0.0"
+  
+  # Scan timeout in minutes
+  timeout: 30
+  
+  # Trust self-signed certificates
+  trust-cert: false
+  
+  # Paths to scan (relative to project root)
+  scan-paths:
+    - "."
+  
+  # Patterns to exclude from scanning
+  exclude-patterns:
+    - "target/**"
+    - "node_modules/**"
+    - ".git/**"
+    - "*.log"
+
+schedule:
+  # Enable/disable scheduled scans
+  enabled: true
+  
+  # Cron expression for scheduling (daily at 2 AM UTC)
+  cron-expression: "0 0 2 * * ?"
+  
+  # Timezone for scheduling
+  timezone: "UTC"
+  
+  # Run scan immediately when scheduler starts
+  run-on-startup: false
+  
+  # Maximum number of concurrent scan jobs
+  max-concurrent-jobs: 1
+
+git:
+  # Required: GitHub repository URL
+  repository-url: "https://github.com/your-org/your-repo.git"
+  
+  # Required: GitHub personal access token
+  github-token: "your-github-token"
+  
+  # Target branch for pull requests
+  target-branch: "main"
+  
+  # Prefix for auto-generated branch names
+  pr-branch-prefix: "blackduck/auto-fix"
+  
+  # Template for PR titles (supports {date}, {project}, {version} placeholders)
+  pr-title-template: "Black Duck Auto-Fix: Security vulnerabilities found on {date}"
+  
+  # Template for PR body (supports {date}, {project}, {version} placeholders)
+  pr-body-template: |
+    ## Black Duck Security Scan Results
+    
+    This PR contains automatic fixes for security vulnerabilities detected by Black Duck scan.
+    
+    ### Changes Made:
+    - Updated direct dependencies to secure versions
+    - Added exclusions for vulnerable transitive dependencies
+    - Added direct dependencies to replace excluded vulnerable ones
+    
+    **Scan Date:** {date}
+    **Project:** {project}
+    **Version:** {version}
+    
+    ### Review Checklist:
+    - [ ] Verify all dependency updates are appropriate
+    - [ ] Check that exclusions don't break functionality
+    - [ ] Run tests to ensure compatibility
+    - [ ] Review security impact of changes
+    
+    Please review the changes carefully before merging.
+  
+  # Automatically merge PRs (not recommended for production)
+  auto-merge: false
+  
+  # Delete branch after successful merge
+  delete-branch-after-merge: true
+  
+  # GitHub usernames to request as reviewers
+  reviewers:
+    - "security-team"
+    - "lead-developer"
+  
+  # Labels to add to PRs
+  labels:
+    - "security"
+    - "auto-generated"
+    - "dependencies"
+
+auto-fix:
+  # Enable/disable automatic POM fixes
+  enabled: true
+  
+  # Update direct dependencies to secure versions
+  update-direct-dependencies: true
+  
+  # Add exclusions for vulnerable transitive dependencies
+  add-exclusions: true
+  
+  # Add direct dependencies to replace excluded vulnerable ones
+  add-direct-replacements: true
+  
+  # Create backup of original POM file
+  backup-pom: true
+  
+  # Maximum version jump allowed (PATCH, MINOR, MAJOR)
+  # PATCH: 1.0.0 -> 1.0.1
+  # MINOR: 1.0.0 -> 1.1.0
+  # MAJOR: 1.0.0 -> 2.0.0
+  max-version-jump: "MINOR"
+  
+  # Exclude SNAPSHOT versions from updates
+  exclude-snapshot-versions: true
+  
+  # Prefer release versions over pre-release versions
+  prefer-release-versions: true

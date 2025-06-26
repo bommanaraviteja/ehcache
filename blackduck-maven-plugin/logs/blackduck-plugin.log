@@ -1,0 +1,39 @@
+2025-06-26 05:35:33.197 [main] INFO  c.rt.blackduck.util.PomManipulator - Auto-fix is disabled, skipping POM modifications
+2025-06-26 05:35:33.212 [main] INFO  c.rt.blackduck.util.PomManipulator - Created backup of POM file: pom.xml.backup.20250626-053533
+2025-06-26 05:35:33.226 [main] INFO  c.rt.blackduck.util.PomManipulator - Processing vulnerability: CVE-2023-1234 for component: org.hibernate:hibernate-core:4.3.5.Final
+2025-06-26 05:35:33.227 [main] INFO  c.rt.blackduck.util.PomManipulator - Updated direct dependency org.hibernate:hibernate-core from 4.3.5.Final to 4.4.0.Final
+2025-06-26 05:35:33.231 [main] INFO  c.rt.blackduck.util.PomManipulator - Successfully updated POM file with security fixes
+2025-06-26 05:35:33.236 [main] INFO  c.rt.blackduck.util.PomManipulator - Created backup of POM file: pom.xml.backup.20250626-053533
+2025-06-26 05:35:33.238 [main] INFO  c.rt.blackduck.util.PomManipulator - No modifications were needed for the POM file
+2025-06-26 05:35:33.242 [main] INFO  c.rt.blackduck.util.PomManipulator - Created backup of POM file: pom.xml.backup.20250626-053533
+2025-06-26 05:35:33.244 [main] INFO  c.rt.blackduck.util.PomManipulator - Processing vulnerability: CVE-2023-1234 for component: org.hibernate:hibernate-core:4.3.5.Final
+2025-06-26 05:35:33.244 [main] WARN  c.rt.blackduck.util.PomManipulator - Version update from 4.3.5.Final to 5.6.15.Final exceeds maximum allowed jump
+2025-06-26 05:35:33.244 [main] INFO  c.rt.blackduck.util.PomManipulator - Added exclusion for org.hibernate:hibernate-core to dependency org.hibernate:hibernate-core
+2025-06-26 05:35:33.245 [main] INFO  c.rt.blackduck.util.PomManipulator - Added direct dependency org.hibernate:hibernate-core:5.6.15.Final to fix CVE-2023-1234
+2025-06-26 05:35:33.249 [main] INFO  c.rt.blackduck.util.PomManipulator - Successfully updated POM file with security fixes
+2025-06-26 05:35:43.451 [main] INFO  c.rt.blackduck.util.PomManipulator - Auto-fix is disabled, skipping POM modifications
+2025-06-26 05:35:43.480 [main] INFO  c.rt.blackduck.util.PomManipulator - Created backup of POM file: pom.xml.backup.20250626-053543
+2025-06-26 05:35:43.499 [main] INFO  c.rt.blackduck.util.PomManipulator - Processing vulnerability: CVE-2023-1234 for component: org.hibernate:hibernate-core:4.3.5.Final
+2025-06-26 05:35:43.501 [main] INFO  c.rt.blackduck.util.PomManipulator - Updated direct dependency org.hibernate:hibernate-core from 4.3.5.Final to 4.4.0.Final
+2025-06-26 05:35:43.505 [main] INFO  c.rt.blackduck.util.PomManipulator - Successfully updated POM file with security fixes
+2025-06-26 05:35:43.516 [main] INFO  c.rt.blackduck.util.PomManipulator - Created backup of POM file: pom.xml.backup.20250626-053543
+2025-06-26 05:35:43.518 [main] INFO  c.rt.blackduck.util.PomManipulator - No modifications were needed for the POM file
+2025-06-26 05:35:43.522 [main] INFO  c.rt.blackduck.util.PomManipulator - Created backup of POM file: pom.xml.backup.20250626-053543
+2025-06-26 05:35:43.525 [main] INFO  c.rt.blackduck.util.PomManipulator - Processing vulnerability: CVE-2023-1234 for component: org.hibernate:hibernate-core:4.3.5.Final
+2025-06-26 05:35:43.525 [main] WARN  c.rt.blackduck.util.PomManipulator - Version update from 4.3.5.Final to 5.6.15.Final exceeds maximum allowed jump
+2025-06-26 05:35:43.526 [main] INFO  c.rt.blackduck.util.PomManipulator - Added exclusion for org.hibernate:hibernate-core to dependency org.hibernate:hibernate-core
+2025-06-26 05:35:43.526 [main] INFO  c.rt.blackduck.util.PomManipulator - Added direct dependency org.hibernate:hibernate-core:5.6.15.Final to fix CVE-2023-1234
+2025-06-26 05:35:43.528 [main] INFO  c.rt.blackduck.util.PomManipulator - Successfully updated POM file with security fixes
+2025-06-26 05:37:29.168 [main] INFO  c.rt.blackduck.util.PomManipulator - Auto-fix is disabled, skipping POM modifications
+2025-06-26 05:37:29.186 [main] INFO  c.rt.blackduck.util.PomManipulator - Created backup of POM file: pom.xml.backup.20250626-053729
+2025-06-26 05:37:29.201 [main] INFO  c.rt.blackduck.util.PomManipulator - Processing vulnerability: CVE-2023-1234 for component: org.hibernate:hibernate-core:4.3.5.Final
+2025-06-26 05:37:29.202 [main] INFO  c.rt.blackduck.util.PomManipulator - Updated direct dependency org.hibernate:hibernate-core from 4.3.5.Final to 4.4.0.Final
+2025-06-26 05:37:29.206 [main] INFO  c.rt.blackduck.util.PomManipulator - Successfully updated POM file with security fixes
+2025-06-26 05:37:29.210 [main] INFO  c.rt.blackduck.util.PomManipulator - Created backup of POM file: pom.xml.backup.20250626-053729
+2025-06-26 05:37:29.213 [main] INFO  c.rt.blackduck.util.PomManipulator - No modifications were needed for the POM file
+2025-06-26 05:37:29.216 [main] INFO  c.rt.blackduck.util.PomManipulator - Created backup of POM file: pom.xml.backup.20250626-053729
+2025-06-26 05:37:29.218 [main] INFO  c.rt.blackduck.util.PomManipulator - Processing vulnerability: CVE-2023-1234 for component: org.hibernate:hibernate-core:4.3.5.Final
+2025-06-26 05:37:29.218 [main] WARN  c.rt.blackduck.util.PomManipulator - Version update from 4.3.5.Final to 5.6.15.Final exceeds maximum allowed jump
+2025-06-26 05:37:29.218 [main] INFO  c.rt.blackduck.util.PomManipulator - Added exclusion for org.hibernate:hibernate-core to dependency org.hibernate:hibernate-core
+2025-06-26 05:37:29.219 [main] INFO  c.rt.blackduck.util.PomManipulator - Added direct dependency org.hibernate:hibernate-core:5.6.15.Final to fix CVE-2023-1234
+2025-06-26 05:37:29.221 [main] INFO  c.rt.blackduck.util.PomManipulator - Successfully updated POM file with security fixes

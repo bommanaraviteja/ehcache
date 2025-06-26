@@ -1,0 +1,47 @@
+---
+blackduck:
+  url: "https://your-blackduck-instance.com"
+  token: "your-blackduck-api-token"
+  project-name: "Black Duck Maven Plugin"
+  project-version: "1.0.0-SNAPSHOT"
+  timeout: 30
+  trust-cert: false
+  scan-paths:
+  - "."
+  exclude-patterns:
+  - "target/**"
+  - "node_modules/**"
+  - ".git/**"
+schedule:
+  enabled: false
+  cron-expression: "0 0 2 * * ?"
+  timezone: "UTC"
+  run-on-startup: false
+  max-concurrent-jobs: 1
+git:
+  repository-url: "https://github.com/your-org/your-repo.git"
+  github-token: "your-github-token"
+  target-branch: "main"
+  pr-branch-prefix: "blackduck/auto-fix"
+  pr-title-template: "Black Duck Auto-Fix: Security vulnerabilities found on {date}"
+  pr-body-template: "## Black Duck Security Scan Results\n\nThis PR contains automatic\
+    \ fixes for security vulnerabilities detected by Black Duck scan.\n\n### Changes\
+    \ Made:\n- Updated direct dependencies to secure versions\n- Added exclusions\
+    \ for vulnerable transitive dependencies\n- Added direct dependencies to replace\
+    \ excluded vulnerable ones\n\n**Scan Date:** {date}\n**Project:** {project}\n\
+    **Version:** {version}\n\nPlease review the changes before merging.\n"
+  auto-merge: false
+  delete-branch-after-merge: true
+  reviewers: []
+  labels:
+  - "security"
+  - "auto-generated"
+auto-fix:
+  enabled: true
+  update-direct-dependencies: true
+  add-exclusions: true
+  add-direct-replacements: true
+  backup-pom: true
+  max-version-jump: "MINOR"
+  exclude-snapshot-versions: true
+  prefer-release-versions: true
